@@ -1,0 +1,246 @@
+
+
+
+/* @@@@ footer @@@@ */
+
+.footer_box_01_outer {
+  width: 100%;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 30px 0;
+}
+.footer_box_01 {
+  width: 1070px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.footer_logo {
+  width: 95px;
+  float: left;
+  margin-right: 105px;
+}
+
+.footer_01,
+.footer_02,
+.footer_03 {
+  width: 200px;
+  float: left;
+  letter-spacing: -1px;
+}
+
+.footer_01 ul li,
+.footer_02 ul li,
+.footer_03 ul li {
+  font-size: 14px;
+  line-height: 26px;
+  color: #191919;
+}
+
+.footer_01 ul li:nth-child(1),
+.footer_02 ul li:nth-child(1),
+.footer_03 ul li:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.footer_03 {
+  margin-right: 30px;
+}
+
+.footer_01 ul li:hover,
+.footer_02 ul li:hover,
+.footer_03 ul li:hover {
+  text-decoration: underline;
+}
+
+
+.footer_sns {
+  width: 240px;
+  float: left;
+  padding-top: 10px;
+}
+
+.footer_sns .sns_box {
+  width: 240px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.footer_sns .sns_icon {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+}
+
+.footer_sns .sns_txt a {
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: #666;
+}
+
+.footer_sns .sns_txt a:hover {
+  text-decoration: underline;
+}
+
+
+.footer_box_02_outer {
+  width: 100%;
+  background-color: #e2e2e2;
+  padding: 50px 0;
+}
+.footer_box_02 {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.footer_box_02 span,
+.footer_box_02 p,
+.footer_box_02 a {
+  font-size: 13px;
+  color: #666;
+}
+
+.footer_box_02 .portfolio {
+  float: right;
+  color: #666;
+  font-weight: bold;
+}
+
+.footer_box_02 a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* @@@@ wing_banner @@@@ */
+.wing_banner {
+  width: 95px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+}
+.wing_banner .top_btn,
+.wing_banner .chat_bot {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: white;
+  margin: 0 auto;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.wing_banner .top_btn {
+  background-image: url(../image/top_btn.png);
+  margin-bottom: 5px;
+}
+.wing_banner .chat_bot {
+  background-image: url(../image/comment.png);
+}
+.wing_banner .top_btn:hover,
+.wing_banner .chat_bot:hover {
+  background-color: #ccc;
+}
+
+
+.chat_bot_box {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.chat_bot_box .chat_bot_info {
+  padding: 30px 10px;
+  display: flex;
+  background-color: #8FBEE5;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.chat_bot_box .chat_bot_info .chat_bot_logo {
+  width: 95px;
+  position: relative;
+  top: 25px;
+  left: 0;
+  margin-right: 10px;
+}
+
+.chat_bot_box .chat_bot_info .chat_bot_text {
+  font-size: 13px;
+  letter-spacing: -1px;
+}
+
+.chat_bot_box .chat_bot_info .chat_bot_text span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.chat_bot_box .chat_bot_message {
+  width: 270px;
+  margin: 0 auto;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+
+}
+
+.chat_bot_box .chat_bot_message input {
+  width: 180px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.chat_bot_box .chat_bot_message p {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  background-color: #191919;
+  color: white;
+  font-size: 14px;
+  letter-spacing: -1px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+
+
+/* @@@@ chat_bot_btn @@@@ */
+#chat_bot_btn {
+  display: none;
+}
+
+#chat_bot_btn:checked~.wing_banner .chat_bot_box {
+  opacity: 1;
+}
+
+#chat_bot_btn:checked~.wing_banner .chat_bot {
+  background-image: url(../image/x_button.png);
+}

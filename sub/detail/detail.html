@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAZE</title>
+
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="icon" href="./image/favicon.png">
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  
+  <!-- scrollTo -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+
+
+  <!-- users -->
+  <script src="./js/main.js"></script>
+  <script type="module" src="../../js/index.js" defer></script>
+
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+
+<body>
+
+
+
+  <header class="header_01" id="header">
+    <nav class="header_01_box">
+      <ul class="gnb_top">
+        <li class="gnb_logout_btn"><a href="../../login.html">로그아웃</a></li>
+        <li class="gnb_login_btn"><a href="../../login.html">로그인</a></li>
+        <li class="gnb_join_btn"><a href="../../join.html">회원가입</a></li>
+        <li><a href="#!">장바구니</a></li>
+        <li><a href="#!">위시리스트</a></li>
+        <li><a href="#!">내 정보</a></li>
+      </ul><!--gnb_top-->
+    </nav><!--header_01-1-->
+  </header><!--header_01-->
+
+
+  <div class="header_02_outer">
+    <header class="header_02">
+      <div class="logo_box">
+        <a href="../../index.html">
+          <img src="./image/logo.png" alt="브랜드 로고">
+        </a>
+      </div><!--logo-->
+
+
+      <nav class="gnb">
+        <ul class="gnb_menu">
+          <li class="menu_name"><a href="../sub.html">신상품</a></li>
+          <li class="menu_name"><a href="../sub.html">인기상품</a></li>
+          <li class="menu_name gnb_iphone"><a href="#!">아이폰</a>
+            <ul>
+              <li><a href="../sub.html">아이폰16 시리즈</a></li>
+              <li><a href="../sub.html">아이폰15 시리즈</a></li>
+              <li><a href="../sub.html">아이폰14 시리즈</a></li>
+              <li><a href="../sub.html">아이폰13 시리즈</a></li>
+              <li><a href="../sub.html">아이폰12 시리즈</a></li>
+              <li><a href="../sub.html">아이폰11 시리즈</a></li>
+              <li><a href="../sub.html">기타</a></li>
+            </ul>
+          </li>
+          <li class="menu_name galaxy"><a href="#!">갤럭시</a>
+            <div class="galaxy_menu">
+              <ul>
+                <li><a href="../sub.html">갤럭시 Z 플립6</a></li>
+                <li><a href="../sub.html">갤럭시 Z 플립5</a></li>
+                <li><a href="../sub.html">갤럭시 Z 플립4</a></li>
+                <li><a href="../sub.html">갤럭시 Z 폴드6</a></li>
+                <li><a href="../sub.html">갤럭시 Z 폴드5</a></li>
+                <li><a href="../sub.html">갤럭시 Z 폴드4</a></li>
+              </ul>
+              <ul>
+                <li><a href="../sub.html">갤럭시 S25 시리즈</a></li>
+                <li><a href="../sub.html">갤럭시 S24 시리즈</a></li>
+                <li><a href="../sub.html">갤럭시 S23 시리즈</a></li>
+                <li><a href="../sub.html">갤럭시 S22 시리즈</a></li>
+                <li><a href="../sub.html">갤럭시 S21 시리즈</a></li>
+                <li><a href="../sub.html">기타</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu_name gnb_ear"><a href="#!">이어버드</a>
+            <ul>
+              <li><a href="../sub.html">에어팟</a></li>
+              <li><a href="../sub.html">에어팟 프로</a></li>
+              <li><a href="../sub.html">에어팟 맥스</a></li>
+              <li><a href="../sub.html">버즈</a></li>
+            </ul>
+          </li>
+          <li class="menu_name gnb_acc"><a href="#!">액세서리</a>
+            <ul>
+              <li><a href="../sub.html">스마트톡</a></li>
+              <li><a href="../sub.html">키링</a></li>
+              <li><a href="../sub.html">스트랩</a></li>
+              <li><a href="../sub.html">기타</a></li>
+            </ul>
+          </li>
+        </ul><!--gnb_menu-->
+      </nav><!--gnb-->
+
+
+      <div class="gnb_top_box">
+        <div class="search_box">
+          <input type="search">
+          <div class="gnb_search_btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div><!--gnb_top_box-->
+
+
+    </header><!--header_02-->
+  </div><!--header_02_outer-->
+
+
+
+
+
+
+  <div class="wrap">
+
+    <input type="radio" name="detail_img" id="img_01" checked>
+    <input type="radio" name="detail_img" id="img_02">
+    <input type="radio" name="detail_img" id="img_03">
+    <input type="radio" name="detail_img" id="img_04">
+
+    <input type="checkbox" name="review_open" id="review_btn_01">
+    <input type="checkbox" name="review_open" id="review_btn_02">
+
+
+
+    <section class="detail_page">
+      <div class="detail_info">
+        <div class="detail_thumbnail_box">
+          <label for="img_01">
+            <div class="thumbnail"></div>
+          </label>
+          <label for="img_02">
+            <div class="thumbnail"></div>
+          </label>
+          <label for="img_03">
+            <div class="thumbnail"></div>
+          </label>
+          <label for="img_04">
+            <div class="thumbnail"></div>
+          </label>
+        </div>
+
+        <div class="detail_left_box">
+
+
+          <div class="detail_img_box">
+            <div class="detail_img detail_img01">
+              <img src="./image/detail_product_img_01.jpg" alt="제품 이미지 01">
+
+              <label for="img_04" class="detail_img_btn_left">
+                <div></div>
+              </label>
+
+              <label for="img_02" class="detail_img_btn_right">
+                <div></div>
+              </label>
+
+            </div>
+
+            <div class="detail_img detail_img02">
+              <img src="./image/detail_product_img_02.jpg" alt="제품 이미지 02">
+
+
+              <label for="img_01" class="detail_img_btn_left">
+                <div></div>
+              </label>
+
+              <label for="img_03" class="detail_img_btn_right">
+                <div></div>
+              </label>
+            </div>
+
+
+            <div class="detail_img detail_img03">
+              <img src="./image/detail_product_img_03.jpg" alt="제품 이미지 02">
+
+
+              <label for="img_02" class="detail_img_btn_left">
+                <div></div>
+              </label>
+
+              <label for="img_04" class="detail_img_btn_right">
+                <div></div>
+              </label>
+            </div>
+
+
+            <div class="detail_img detail_img04">
+              <img src="./image/detail_product_img_04.jpg" alt="제품 이미지 02">
+
+
+              <label for="img_03" class="detail_img_btn_left">
+                <div></div>
+              </label>
+
+              <label for="img_01" class="detail_img_btn_right">
+                <div></div>
+              </label>
+            </div>
+
+
+          </div>
+
+
+          <ul class="detail_img_slider">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div><!--detail_left_box-->
+
+      <div class="detail_right_box">
+
+
+        <div class="detail_text">
+          <div class="detail_text_box">
+            <div class="detail_title">
+              <a href="../sub.html">아이폰</a>
+              <div class="detail_arrow"><img src="./image/right_arrow_gray.png" alt="접속 위치 표시"></div>
+              <a href="../sub.html">아이폰16 시리즈</a>
+              <div class="detail_arrow"><img src="./image/right_arrow_gray.png" alt="접속 위치 표시"></div>
+              <a href="../sub.html">아이폰16</a>
+            </div>
+            <div class="detail_name">
+              <p>[하드/카드수납 폰케이스] 더스트 플래닛</p>
+            </div>
+          </div>
+
+          <div class="detail_btn">
+            <div class="share_btn"></div>
+            <div class="heart_btn"></div>
+          </div>
+
+        </div><!--detail_text-->
+
+
+        <div class="detail_price_box">
+          <div class="detail_price">
+            <span>22,000</span>
+          </div>
+          <div class="detail_coupon">
+            <span>쿠폰</span>
+          </div>
+        </div><!--detail_price-->
+
+
+        <div class="detail_option">
+          <p>옵션</p>
+          <select>
+            <option>아이폰16</option>
+            <option>아이폰16 Pro</option>
+            <option>아이폰16 Pro Max</option>
+            <option>아이폰16 Plus</option>
+            <option>아이폰16e</option>
+            <option>아이폰15</option>
+            <option>아이폰15 Pro</option>
+            <option>아이폰15 Pro Max</option>
+            <option>아이폰15 Plus</option>
+            <option>아이폰14</option>
+            <option>아이폰14 Pro</option>
+            <option>아이폰14 Pro Max</option>
+            <option>아이폰14 Plus</option>
+            <option>아이폰13</option>
+            <option>아이폰13 Pro</option>
+            <option>아이폰13 Pro Max</option>
+            <option>아이폰13 mini</option>
+          </select>
+        </div><!--detail_option-->
+
+
+        <div class="detail_amount">
+          <p>수량</p>
+          <div>
+            <a href="#!" class="amount_box">
+              <p class="amount_minus">-</p>
+              <span class="amount">1</span>
+              <p class="amount_plus">+</p>
+            </a>
+            <div class="amount_price">
+              <span>22,000</span>
+            </div>
+          </div>
+        </div><!--detail_amount-->
+
+
+        <div class="detail_color">
+          <p>내 스마트폰에 적용하기</p>
+          <div>
+            <a href="#!" class="detail_color_img"><img src="./image/detail_color01.png" alt="스마트폰 컬러 01"></a>
+            <a href="#!" class="detail_color_img"><img src="./image/detail_color02.png" alt="스마트폰 컬러 02"></a>
+            <a href="#!" class="detail_color_img"><img src="./image/detail_color03.png" alt="스마트폰 컬러 03"></a>
+            <a href="#!" class="detail_color_img"><img src="./image/detail_color04.png" alt="스마트폰 컬러 04"></a>
+            <a href="#!" class="detail_color_img"><img src="./image/detail_color05.png" alt="스마트폰 컬러 05"></a>
+          </div>
+        </div><!--detail_color-->
+
+
+        <div class="detail_last_price">
+          <span>총 상품 금액</span>
+          <span class="last_price">22,000</span>
+        </div>
+
+
+        <ul class="detail_buy_btn">
+          <li><a href="#!">장바구니</a></li>
+          <li><a href="#!">바로 구매하기</a></li>
+        </ul>
+
+      </div>
+  </div><!--detail_info-->
+
+
+
+
+  <div class="detail_sheet_wrap">
+    <div class="detail_tab_list tab_01" id="detail">
+
+      <div>
+        <a href="#detail">
+          <span>상품 상세</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="#review">
+          <span>상품 후기</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="#qna">
+          <span>상품 Q&A</span>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="detail_box">
+      <div class="detail_info_sheet">
+        <div class="detail_notice">
+          <p class="notice_title">주문 시 유의사항</p>
+          <p>평일 오후 3시 이후 결제완료 주문 건은 다음날 발송됩니다.</p>
+          <p>주말, 공휴일 결제완료 주문 건은 평일 영업일 중 출고됩니다.</p>
+          <p>상품 준비/배송 준비 단계에서는 색상 변경 및 주문 취소가 불가하니 신중한 구매 부탁드립니다.</p>
+          <p>제품별 재고 여부에 따라 출고 일정은 상이할 수 있습니다.</p>
+        </div><!--detail_notice-->
+
+
+        <div class="detail_sheet_img"><img src="./image/detail_contents_02.jpg" alt="제품 상세 이미지 02"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_03.PNG" alt="제품 상세 이미지 03"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_04.PNG" alt="제품 상세 이미지 04"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_05.PNG" alt="제품 상세 이미지 05"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_06.PNG" alt="제품 상세 이미지 06"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_07.PNG" alt="제품 상세 이미지 07"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_08.PNG" alt="제품 상세 이미지 08"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_09.PNG" alt="제품 상세 이미지 09"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_10.PNG" alt="제품 상세 이미지 10"></div>
+        <div class="detail_sheet_img"><img src="./image/detail_contents_11.PNG" alt="제품 상세 이미지 11"></div>
+
+
+
+      </div><!--detail_info_sheet-->
+      <div class="detail_tab_list tab_02" id="review">
+
+        <div>
+          <a href="#detail">
+            <span>상품 상세</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#review">
+            <span>상품 후기</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#qna">
+            <span>상품 Q&A</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="detail_review_sheet">
+
+        <div class="review_title">
+          <span>상품 후기 </span>
+          <span class="review_count">(3)</span>
+          <span class="review_modal_btn">리뷰 작성</span>
+        </div>
+
+        <div class="review_list">
+          <div class="review_box review01">
+            <div class="review_text">
+              <div class="review_subtext">
+                <span class="reviewer_name">오승하</span>
+                <span class="review_slash">/</span>
+                <span class="review_date">2025.04.23.</span>
+                <br>
+                <span class="review_star">★★★★★</span>
+                <span class="review_score">5.0</span>
+                <br>
+                <span class="review_option">선택 옵션: 아이폰14 Pro</span>
+                <div class="review_content_box">
+                  <p class="review_content">배송도 빠르고 마음에 들어요! 검은색 스마트폰이랑 잘 어울리는 것 같아요. 또 튼튼해요.</p>
+                </div>
+              </div>
+
+
+              <div class="review_user_img">
+                <img src="./image/detail_review_01.jpg" alt="리뷰 이미지 01">
+              </div>
+            </div><!--review_text-->
+
+            <div class="review_btn_01">
+              <label for="review_btn_01">
+                <div class="review_text_btn"></div>
+                <div class="review_arrow_btn"></div>
+              </label>
+            </div>
+          </div><!--review_box_01-->
+
+
+
+          <div class="review_box review02">
+            <div class="review_text">
+              <div class="review_subtext">
+                <span class="reviewer_name">김OO</span>
+                <span class="review_slash">/</span>
+                <span class="review_date">2025.04.10.</span>
+                <br>
+                <span class="review_star">★★★★☆</span>
+                <span class="review_score">4.0</span>
+                <br>
+                <span class="review_option">선택 옵션: 갤럭시S23</span>
+                <div class="review_content_box">
+                  <p class="review_content">제품은 예쁜데 배송이 느렸어요 상품은 괜찮아서 참고 기다릴 만해요~ </p>
+                </div>
+              </div>
+            </div><!--review_text-->
+          </div><!--review_box_02-->
+
+
+
+
+          <div class="review_box review03">
+            <div class="review_text">
+              <div class="review_subtext">
+                <span class="reviewer_name">이OO</span>
+                <span class="review_slash">/</span>
+                <span class="review_date">2025.04.03.</span>
+                <br>
+                <span class="review_star">★★★★★</span>
+                <span class="review_score">5.0</span>
+                <br>
+                <span class="review_option">선택 옵션: 아이폰15</span>
+                <div class="review_content_box">
+                  <p class="review_content">정말 귀여워요 배송도 생각보다 빨랐고 내구성도 좋아요 ㅎㅎ</p>
+                </div>
+              </div>
+
+
+              <div class="review_user_img">
+                <img src="./image/detail_review_02.jpg" alt="리뷰 이미지 02">
+              </div>
+            </div>
+
+            <div class="review_btn_02">
+              <label for="review_btn_02">
+                <div class="review_text_btn"></div>
+                <div class="review_arrow_btn"></div>
+              </label>
+            </div>
+          </div><!--review_box_03-->
+        </div>
+
+        <div class="page_btn">
+          <label for="page_01" class="page_btn_left"></label>
+
+          <div class="page_num">
+            <label for="page_01">1</label>
+          </div>
+
+          <label for="page_02" class="page_btn_right"></label>
+        </div><!--review_page_btn-->
+
+
+      </div><!--detail_review_sheet-->
+
+
+      <div class="detail_tab_list tab_03" id="qna">
+
+        <div>
+          <a href="#detail">
+            <span>상품 상세</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#review">
+            <span>상품 후기</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#qna">
+            <span>상품 Q&A</span>
+          </a>
+        </div>
+      </div>
+      <div class="detail_qna_sheet">
+        <div class="qna_title">
+          <span>상품 Q&A </span>
+          <span class="qna_count">(2)</span>
+          <span class="qna_modal_btn">문의하기</span>
+        </div>
+
+        <div class="qna_list_box">
+          <div class="qna_list">
+            <div class="qna_text">
+              <p class="qna_category">[배송문의]</p>
+              <a href="#!">
+                <p>배송 문의 드립니다. 언제 출고되나요?</p>
+              </a>
+            </div>
+            <div class="qna_info">
+              <span>박OO</span>
+              <span>/</span>
+              <span>2025.04.23.</span>
+            </div>
+          </div>
+
+          <div class="qna_list">
+            <div>
+              <div class="qna_text">
+                <p>[상품문의]</p>
+                <p class="qna_end">답변 완료</p>
+                <a href="#!">
+                  <p>비밀글입니다.</p>
+                </a>
+                <div class="qna_lock"><img src="./image/lock_close.png" alt="비밀글 아이콘"></div>
+              </div>
+              <div class="qna_info">
+                <span>최OO</span>
+                <span>/</span>
+                <span>2025.04.23.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="review_modal_wrap">
+    <section class="review_modal">
+      <div class="modal_x_btn">
+        <img src="./image/modal_x_btn.png" alt="모달창 종료 버튼">
+      </div>
+
+      <div class="review_modal_box">
+        <div class="modal_title">
+          <div class="bullet">
+            <p>리뷰 작성</p>
+            <span class="modal_alert">* 작성되지 않은 내용이 있습니다.</span>
+          </div>
+        </div>
+        
+        <div class="review_name_box">
+          <span>이름: </span>
+          <input type="text" class="reviewer_name_input modal_required_info" required>
+        </div>
+
+        <div class="review_star_box">
+          <span>별점: </span>
+          <select class="review_star_select" required>
+            <option value="0">----- 별점 선택 -----</option>
+            <option value="5">★★★★★(5점)</option>
+            <option value="4">★★★★☆(4점)</option>
+            <option value="3">★★★☆☆(3점)</option>
+            <option value="2">★★☆☆☆(2점)</option>
+            <option value="1">★☆☆☆☆(1점)</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea name="content" placeholder="리뷰를 작성해 주세요!" class="review_context modal_required_info" required></textarea>
+        </div>
+
+
+
+        <div class="modal_btn_box">
+          <button type="button" class="detail_submit_btn modal_active">글쓰기</button>
+          <button type="button" class="detail_cancle_btn">취소</button>
+        </div>
+
+      </div><!--review_box-->
+    </section><!--review_modal-->
+  </div>
+
+
+  <div class="qna_modal_wrap">
+    <section class="qna_modal">
+      <div class="modal_x_btn">
+        <img src="./image/modal_x_btn.png" alt="모달창 종료 버튼">
+      </div>
+
+      <div class="qna_modal_box">
+        <div class="modal_title">
+          <div class="bullet">
+            <p>Q&A 작성</p>
+            <span class="modal_alert">* 작성되지 않은 내용이 있습니다.</span>
+          </div>
+        </div>
+        
+        <div class="qna_name_box">
+          <span>이름: </span>
+          <input type="text" class="qna_name_input modal_required_info" required>
+        </div>
+
+        <div class="qna_category_box">
+          <span>유형: </span>
+          <select class="qna_category_select">
+            <option value="0">----- 유형 선택 -----</option>
+            <option>배송문의</option>
+            <option>상품문의</option>
+            <option>재입고문의</option>
+            <option>기타</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea name="content" placeholder="문의할 내용을 작성해 주세요" class="qna_context modal_required_info" required></textarea>
+        </div>
+
+        <div class="modal_btn_box">
+          <button type="button" class="detail_submit_btn">글쓰기</button>
+          <button type="button" class="detail_cancle_btn">취소</button>
+        </div>
+
+      </div><!--qna_box-->
+    </section><!--qna_modal-->
+  </div>
+
+
+
+  </section>
+
+
+  <input type="checkbox" name="chat_bot" id="chat_bot_btn">
+
+  <div class="footer_box_01_outer">
+    <footer class="footer_box_01">
+      <div>
+        <a href="../../index.html" class="footer_logo">
+          <img src="./image/logo.png" alt="하단 로고">
+        </a>
+      </div>
+      <nav class="footer_01">
+        <ul>
+          <li>About caze</li>
+          <li><a href="#!">회사소개</a></li>
+          <li><a href="#!">이벤트</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer_02">
+        <ul>
+          <li>HELP / 안내</li>
+          <li><a href="#!">이용약관</a></li>
+          <li><a href="#!">반품 정책</a></li>
+          <li><a href="#!">공지사항</a></li>
+          <li><a href="#!">FAQ</a></li>
+          <li><a href="#!">문의하기</a></li>
+        </ul>
+      </nav>
+
+
+      <nav class="footer_03">
+        <ul>
+          <li>MY ACCOUNT / 내 계정</li>
+          <li><a href="#!">1:1 문의 내역</a></li>
+          <li><a href="#!">리뷰 내역</a></li>
+          <li><a href="#!">쿠폰</a></li>
+          <li><a href="#!">내 정보 수정</a></li>
+          <li><a href="#!">주문/배송 조회</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer_sns">
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/insta_icon.png" alt="인스타그램 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 인스타그램 계정 방문하기</a>
+          </div>
+        </div>
+
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/x_icon.png" alt="X 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 X 계정 방문하기</a>
+          </div>
+        </div>
+
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/youtube_logo.png" alt="유튜브 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 유튜브 채널 방문하기</a>
+          </div>
+        </div>
+      </div><!--footer_sns-->
+
+    </footer><!--footer_box_01-->
+  </div><!--footer_outer_01-->
+
+  <div class="footer_box_02_outer">
+    <footer class="footer_box_02">
+      <span>㈜케이즈코퍼레이션 |</span>
+      <span>대표 오승하 |</span>
+      <span>부산광역시 부산진구 중앙대로 688 한준빌딩 2층 |</span>
+      <span>사업자등록번호 000-00-00000</span>
+      <a href="#!">(사업자 정보 확인)</a>
+      <br>
+      <span>고객센터 010-4110-2175 |</span>
+      <span>팩스 00-0000-0000 |</span>
+      <span>이메일 </span>
+      <a href="#!">sara2175@naver.com </a>
+      <span>| 운영시간: 평일 09:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</span>
+      <br>
+      <br>
+      <p>고객님은 안전거래를 위해 현금 결제 시, CAZE 에서 가입한 소비자피해보상보험 서비스를 이용하실 수 있습니다.</p>
+      <span>보상대상: 미배송/반품, 환불 거부/쇼핑몰 부도</span>
+      <a href="#!">(서비스 가입 사실 확인)</a>
+      <br>
+      <br>
+      <span>COPYRIGHT ⓒ 2025 CAZE Corp. All rights reserved.</span>
+      <p class="portfolio">상업적 용도가 아닌 입사용 포트폴리오로만 활용하겠습니다.</p>
+    </footer>
+  </div>
+
+
+  <div class="wing_banner">
+    <div class="last_btn">
+      <a href="./detail.html"></a>
+    </div>
+
+    <div class="top_btn">
+      <a href="#header"></a>
+    </div>
+
+    <label for="chat_bot_btn">
+      <div class="chat_bot"></div>
+    </label>
+  </div><!--wing_banner-->
+
+  <div class="chat_bot_box">
+    <div class="chat_bot_info">
+      <div class="chat_bot_logo"><img src="./image/logo.png" alt="브랜드 로고"></div>
+      <div class="chat_bot_text">
+        <span>CAZE 챗봇</span>
+        <p>평일 10:00 ~ 18:00 운영</p>
+        <p>교환/반품/배송/상품문의 등</p>
+        <p>궁금하신 부분을 물어보세요!💙</p>
+      </div>
+    </div>
+
+
+    <div class="chat_bot_message">
+      <input type="text">
+      <p>전송</p>
+    </div>
+  </div><!--chat_bot_box-->
+
+
+</body>
+
+</html>

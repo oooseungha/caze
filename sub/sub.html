@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAZE</title>
+
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="icon" href="./image/favicon.png">
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+  <!-- users -->
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="../js/index.js" defer></script>
+  <script type="module" src="../js/login.js" defer></script>
+  <script type="module" src="../js/join.js" defer></script>
+  <script type="module" src="../js/user.js" defer></script>
+
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+
+<body>
+
+  <header class="header_01" id="header">
+    <nav class="header_01_box">
+      <ul class="gnb_top">
+        <li class="gnb_logout_btn"><a href="../login.html">로그아웃</a></li>
+        <li class="gnb_login_btn"><a href="../login.html">로그인</a></li>
+        <li class="gnb_join_btn"><a href="../join.html">회원가입</a></li>
+        <li><a href="#!">장바구니</a></li>
+        <li><a href="#!">위시리스트</a></li>
+        <li><a href="#!">내 정보</a></li>
+      </ul><!--gnb_top-->
+    </nav><!--header_01-1-->
+  </header><!--header_01-->
+
+
+  <div class="header_02_outer">
+    <header class="header_02">
+      <div class="logo_box">
+        <a href="../index.html">
+          <img src="./image/logo.png" alt="브랜드 로고">
+        </a>
+      </div><!--logo-->
+
+
+      <nav class="gnb">
+        <ul class="gnb_menu">
+          <li class="menu_name"><a href="./sub.html">신상품</a></li>
+          <li class="menu_name"><a href="./sub.html">인기상품</a></li>
+          <li class="menu_name gnb_iphone"><a href="#!">아이폰</a>
+            <ul>
+              <li><a href="./sub.html">아이폰16 시리즈</a></li>
+              <li><a href="./sub.html">아이폰15 시리즈</a></li>
+              <li><a href="./sub.html">아이폰14 시리즈</a></li>
+              <li><a href="./sub.html">아이폰13 시리즈</a></li>
+              <li><a href="./sub.html">아이폰12 시리즈</a></li>
+              <li><a href="./sub.html">아이폰11 시리즈</a></li>
+              <li><a href="./sub.html">기타</a></li>
+            </ul>
+          </li>
+          <li class="menu_name galaxy"><a href="#!">갤럭시</a>
+            <div class="galaxy_menu">
+              <ul>
+                <li><a href="./sub.html">갤럭시 Z 플립6</a></li>
+                <li><a href="./sub.html">갤럭시 Z 플립5</a></li>
+                <li><a href="./sub.html">갤럭시 Z 플립4</a></li>
+                <li><a href="./sub.html">갤럭시 Z 폴드6</a></li>
+                <li><a href="./sub.html">갤럭시 Z 폴드5</a></li>
+                <li><a href="./sub.html">갤럭시 Z 폴드4</a></li>
+              </ul>
+              <ul>
+                <li><a href="./sub.html">갤럭시 S25 시리즈</a></li>
+                <li><a href="./sub.html">갤럭시 S24 시리즈</a></li>
+                <li><a href="./sub.html">갤럭시 S23 시리즈</a></li>
+                <li><a href="./sub.html">갤럭시 S22 시리즈</a></li>
+                <li><a href="./sub.html">갤럭시 S21 시리즈</a></li>
+                <li><a href="./sub.html">기타</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu_name gnb_ear"><a href="#!">이어버드</a>
+            <ul>
+              <li><a href="./sub.html">에어팟</a></li>
+              <li><a href="./sub.html">에어팟 프로</a></li>
+              <li><a href="./sub.html">에어팟 맥스</a></li>
+              <li><a href="./sub.html">버즈</a></li>
+            </ul>
+          </li>
+          <li class="menu_name gnb_acc"><a href="#!">액세서리</a>
+            <ul>
+              <li><a href="./sub.html">스마트톡</a></li>
+              <li><a href="./sub.html">키링</a></li>
+              <li><a href="./sub.html">스트랩</a></li>
+              <li><a href="./sub.html">기타</a></li>
+            </ul>
+          </li>
+        </ul><!--gnb_menu-->
+      </nav><!--gnb-->
+
+
+      <div class="gnb_top_box">
+        <div class="search_box">
+          <input type="search">
+          <div class="gnb_search_btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div><!--gnb_top_box-->
+
+
+    </header><!--header_02-->
+  </div><!--header_02_outer-->
+
+
+
+  <div class="wrap">
+
+
+
+    <input type="checkbox" name="sub_menu" id="category_iphone" checked>
+
+    <input type="checkbox" name="filter" id="filter_price" checked>
+    <input type="checkbox" name="filter" id="filter_model" checked>
+    <input type="checkbox" name="filter" id="filter_color" checked>
+    <input type="checkbox" name="filter" id="filter_info" checked>
+
+    <input type="radio" name="page" id="page_01" checked>
+    <input type="radio" name="page" id="page_02">
+
+
+    <aside class="aside">
+      <nav class="sub_menu">
+        <ul class="category">
+          <li class="category_title">
+            <span>메뉴</span>
+          </li>
+          <li class="all">
+            <label for="category_all">
+              <span>전체 상품</span>
+              <div></div>
+            </label>
+          </li>
+          <li class="iphone">
+            <label for="category_iphone">
+              <span>아이폰</span>
+              <div></div>
+            </label>
+            <ul class="category_iphone">
+              <li><a href="#!">아이폰16 시리즈</a></li>
+              <li><a href="#!">아이폰15 시리즈</a></li>
+              <li><a href="#!">아이폰14 시리즈</a></li>
+              <li><a href="#!">아이폰13 시리즈</a></li>
+              <li><a href="#!">아이폰12 시리즈</a></li>
+              <li><a href="#!">아이폰11 시리즈</a></li>
+              <li><a href="#!">기타</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!--sub_menu-->
+
+
+      <nav class="filter">
+        <ul>
+          <li class="category_title">
+            <span>필터</span>
+            <div><img src="./image/filter.png" alt="필터 메뉴 아이콘"></div>
+          </li>
+          <li class="filter_tab">
+            <label for="filter_price" class="filter">
+              <span>가격대</span>
+              <div class="filter_btn01"></div>
+            </label>
+            <div class="price_input filter_01">
+              <input type="text">
+              <span>~</span>
+              <input type="text">
+            </div>
+          </li>
+
+          <li class="filter_tab">
+            <label for="filter_model" class="filter">
+              <span>기종</span>
+              <div class="filter_btn02"></div>
+            </label>
+            <ul class="filter_box filter_02">
+              <li>
+                <label>아이폰16<input type="checkbox" value="16" data-type="device"></label> 
+              </li>
+              <li>
+                <label>아이폰16 Pro<input type="checkbox" value="16Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰16 Pro Max<input type="checkbox" value="16ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰16 Plus<input type="checkbox" value="16Plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰16e<input type="checkbox" value="16e" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰15<input type="checkbox" value="15" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰15 Pro<input type="checkbox" value="15Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰15 Pro Max<input type="checkbox" value="15ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰15 Plus<input type="checkbox" value="15Plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰14<input type="checkbox" value="14" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰14 Pro<input type="checkbox" value="14Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰14 Pro Max<input type="checkbox" value="14ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰14 Plus<input type="checkbox" value="14Plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰13<input type="checkbox" value="13" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰13 Pro<input type="checkbox" value="13Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰13 Pro Max<input type="checkbox" value="13ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰13 mini <input type="checkbox" value="13mini" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰12<input type="checkbox" value="12" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰12 Pro<input type="checkbox" value="12Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰12 Pro Max<input type="checkbox" value="12ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰12 mini<input type="checkbox" value="12mini" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰11<input type="checkbox" value="11" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰11 Pro<input type="checkbox" value="11Pro" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰11 Pro Max<input type="checkbox" value="11ProMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 SE2<input type="checkbox" value="SE2" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 XS Max<input type="checkbox" value="XSMax" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 XR<input type="checkbox" value="XR" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 X/XS<input type="checkbox" value="XXS" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 8+<input type="checkbox" value="8plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 8<input type="checkbox" value="8" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 7+<input type="checkbox" value="7plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 7<input type="checkbox" value="7" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 6+/6s+<input type="checkbox" value="6plus" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 6/6s<input type="checkbox" value="6s" data-type="device"></label>
+              </li>
+              <li>
+                <label>아이폰 5/5s/SE<input type="checkbox" value="5se" data-type="device"></label>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="filter_tab">
+            <label for="filter_color" class="filter">
+              <span>색상</span>
+              <div class="filter_btn03"></div>
+            </label>
+            <ul class="filter_box filter_03">
+              <li>
+                <label>
+                <div><img src="./image/filter_01.png" alt="필터 색상_화이트"></div>
+                <span>화이트</span>
+                <input type="checkbox" value="white" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_02.png" alt="필터 색상_블랙"></div>
+                <span>블랙</span>
+                <input type="checkbox" value="black" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_03.png" alt="필터 색상_그레이"></div>
+                <span>그레이</span>
+                <input type="checkbox" value="gray" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_04.png" alt="필터 색상_브라운"></div>
+                <span>브라운</span>
+                <input type="checkbox" value="brown" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_05.png" alt="필터 색상_베이지"></div>
+                <span>베이지</span>
+                <input type="checkbox" value="beige" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_06.png" alt="필터 색상_핑크"></div>
+                <span>핑크</span>
+                <input type="checkbox" value="pink" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_07.png" alt="필터 색상_레드"></div>
+                <span>레드</span>
+                <input type="checkbox" value="red" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_08.png" alt="필터 색상_오렌지"></div>
+                <span>오렌지</span>
+                <input type="checkbox" value="orange" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_09.png" alt="필터 색상_옐로우"></div>
+                <span>옐로우</span>
+                <input type="checkbox" value="yellow" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_10.png" alt="필터 색상_그린"></div>
+                <span>그린</span>
+                <input type="checkbox" value="green" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_11.png" alt="필터 색상_민트"></div>
+                <span>민트</span>
+                <input type="checkbox" value="mint" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_12.png" alt="필터 색상_블루"></div>
+                <span>블루</span>
+                <input type="checkbox" value="blue" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_13.png" alt="필터 색상_퍼플"></div>
+                <span>퍼플</span>
+                <input type="checkbox" value="purple" data-type="color">
+                </label>
+              </li>
+              <li>
+                <label>
+                <div><img src="./image/filter_14.png" alt="필터 색상_혼합"></div>
+                <span>혼합</span>
+                <input type="checkbox" value="multi" data-type="color">
+                </label>
+              </li>
+            </ul>
+          </li>
+          <li class="filter_tab">
+            <label for="filter_info" class="filter">
+              <span>상품정보</span>
+              <div class="filter_btn04"></div>
+            </label>
+            <ul class="filter_box filter_04">
+              <li>
+                <label>
+                <span>품절 상품 제외</span>
+                <input type="checkbox" value="soldout" data-type="event">
+                </label>
+              </li>
+              <li>
+                <label>
+                <span>세일</span>
+                <input type="checkbox" value="sale" data-type="event">
+                </label>
+              </li>
+              <li>
+                <label>
+                <span>무료배송</span>
+                <input type="checkbox" value="freeDeliver" data-type="event">
+                </label>
+              </li>
+              <li>
+                <label>
+                <span>이벤트 제품</span>
+                <input type="checkbox" value="eventNow" data-type="event">
+                </label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside><!--aside-->
+
+
+    <section class="sub_product">
+      <div class="list_title">
+        <a href="./sub.html">아이폰</a>
+        <div><img src="./image/right_arrow_gray.png" alt="서브 페이지 위치 표시 아이콘"></div>
+        <a href="./sub.html">아이폰16 시리즈</a>
+      </div>
+
+
+      <div class="list_arrange">
+        <div class="arrange_name">
+          <span>정렬 기준: </span>
+        </div>
+        <div class="arrange_option">
+          <select class="list_sort">
+            <option>---선택---</option>
+            <option>최신순</option>
+            <option>리뷰 많은 순</option>
+            <option>인기순</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product_list product_page_01">
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_01.jpg" alt="제품 01"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>soft love bunny (bumper) 아이폰케이스</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>17,000</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product_list product_page_02">
+
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_37.jpg" alt="제품 37"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>유스스피릿 회오리 소용돌이 말차 녹차 실버 에폭시 케이스</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>23,000</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_38.jpg" alt="제품 38"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>Little beings case (Soft)</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>21,000</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_39.jpg" alt="제품 39"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>"Angel Dot" 레진폰케이스</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>35,000</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+
+        <div class="product_box product_last">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_40.jpg" alt="제품 40"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>딥 샤인 스타 폰케이스 퍼플</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>26,000</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_41.jpg" alt="제품 41"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>버블 리본 하트 레진 케이스</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>21,900</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+
+        <div class="product_box">
+          <div class="product_img">
+            <a href="./detail/detail.html"><img src="./image/product_list_42.jpg" alt="제품 42"></a>
+          </div>
+
+          <div class="product_info">
+            <div class="product_name">
+              <a href="./detail/detail.html">
+                <p>my little broomy case</p>
+              </a>
+            </div>
+            <div class="product_btn">
+              <div class="cart_img"></div>
+              <div class="heart_img"></div>
+            </div>
+          </div>
+
+          <div class="product_price">
+            <a href="./detail/detail.html">
+              <p>22,000</p>
+            </a>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+
+
+      <div class="page_btn">
+        <label for="page_01" class="page_btn_left"></label>
+
+        <div class="page_num">
+          <label for="page_01">1</label>
+          <label for="page_02">2</label>
+        </div>
+
+        <label for="page_02" class="page_btn_right"></label>
+      </div>
+
+
+    </section>
+  </div><!--wrap-->
+
+
+
+  <input type="checkbox" name="chat_bot" id="chat_bot_btn">
+
+  <div class="footer_box_01_outer">
+    <footer class="footer_box_01">
+      <div>
+        <a href="../index.html" class="footer_logo">
+          <img src="./image/logo.png" alt="하단 로고">
+        </a>
+      </div>
+
+      <nav class="footer_01">
+        <ul>
+          <li>About caze</li>
+          <li><a href="#!">회사소개</a></li>
+          <li><a href="#!">이벤트</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer_02">
+        <ul>
+          <li>HELP / 안내</li>
+          <li><a href="#!">이용약관</a></li>
+          <li><a href="#!">반품 정책</a></li>
+          <li><a href="#!">공지사항</a></li>
+          <li><a href="#!">FAQ</a></li>
+          <li><a href="#!">문의하기</a></li>
+        </ul>
+      </nav>
+
+
+      <nav class="footer_03">
+        <ul>
+          <li>MY ACCOUNT / 내 계정</li>
+          <li><a href="#!">1:1 문의 내역</a></li>
+          <li><a href="#!">리뷰 내역</a></li>
+          <li><a href="#!">쿠폰</a></li>
+          <li><a href="#!">내 정보 수정</a></li>
+          <li><a href="#!">주문/배송 조회</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer_sns">
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/insta_icon.png" alt="인스타그램 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 인스타그램 계정 방문하기</a>
+          </div>
+        </div>
+
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/x_icon.png" alt="X 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 X 계정 방문하기</a>
+          </div>
+        </div>
+
+        <div class="sns_box">
+          <div class="sns_icon">
+            <a href="#!"><img src="./image/youtube_logo.png" alt="유튜브 아이콘"></a>
+          </div>
+          <div class="sns_txt">
+            <a href="#!">CAZE 공식 유튜브 채널 방문하기</a>
+          </div>
+        </div>
+      </div><!--footer_sns-->
+
+    </footer><!--footer_box_01-->
+  </div><!--footer_outer_01-->
+
+  <div class="footer_box_02_outer">
+    <footer class="footer_box_02">
+      <span>㈜케이즈코퍼레이션 |</span>
+      <span>대표 오승하 |</span>
+      <span>부산광역시 부산진구 중앙대로 688 한준빌딩 2층 |</span>
+      <span>사업자등록번호 000-00-00000</span>
+      <a href="#!">(사업자 정보 확인)</a>
+      <br>
+      <span>고객센터 010-4110-2175 |</span>
+      <span>팩스 00-0000-0000 |</span>
+      <span>이메일 </span>
+      <a href="#!">sara2175@naver.com </a>
+      <span>| 운영시간: 평일 09:00 ~ 18:00 (점심시간 13:00 ~ 14:00)</span>
+      <br>
+      <br>
+      <p>고객님은 안전거래를 위해 현금 결제 시, CAZE 에서 가입한 소비자피해보상보험 서비스를 이용하실 수 있습니다.</p>
+      <span>보상대상: 미배송/반품, 환불 거부/쇼핑몰 부도</span>
+      <a href="#!">(서비스 가입 사실 확인)</a>
+      <br>
+      <br>
+      <span>COPYRIGHT ⓒ 2025 CAZE Corp. All rights reserved.</span>
+      <p class="portfolio">상업적 용도가 아닌 입사용 포트폴리오로만 활용하겠습니다.</p>
+    </footer>
+  </div>
+
+
+
+
+  <div class="wing_banner">
+
+    <div class="last_btn">
+      <a href="./detail/detail.html"></a>
+    </div>
+
+    <div class="top_btn">
+      <a href="#header"></a>
+    </div>
+
+    <label for="chat_bot_btn">
+      <div class="chat_bot"></div>
+    </label>
+
+  </div><!--wing_banner-->
+
+  <div class="chat_bot_box">
+    <div class="chat_bot_info">
+      <div class="chat_bot_logo"><img src="./image/logo.png" alt="브랜드 로고"></div>
+      <div class="chat_bot_text">
+        <span>CAZE 챗봇</span>
+        <p>평일 10:00 ~ 18:00 운영</p>
+        <p>교환/반품/배송/상품문의 등</p>
+        <p>궁금하신 부분을 물어보세요!💙</p>
+      </div>
+    </div>
+
+
+    <div class="chat_bot_message">
+      <input type="text">
+      <p>전송</p>
+    </div>
+  </div><!--chat_bot_box-->
+
+
+
+
+
+
+</body>
+
+</html>
