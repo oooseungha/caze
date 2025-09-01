@@ -136,7 +136,7 @@ renderProductList();
 ```
 
 <details>
-  <summary>🔎 'DOM 요소 생성 및 구조 연결' 생략 없이 전체 보기</summary>
+  <summary>🔎 생략 없이 전체 보기</summary>
   
 ```javascript
 
@@ -332,7 +332,7 @@ reviewUploadBtn.addEventListener('click', (e) => {
 ```
 
 <details>
-  <summary>🔎 'DOM 요소 생성 및 구조 연결' 생략 없이 전체 보기</summary>
+  <summary>🔎 생략 없이 전체 보기</summary>
 
   
 ```javascript
