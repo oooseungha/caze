@@ -428,15 +428,7 @@ reviewUploadBtn.addEventListener('click', (e) => {
 ```
 </details>
 
-<br/>
-
-### 🔍 코드 리뷰 요약
-- ul > li 구조 + CSS transition으로 외부 라이브러리 없이 슬라이드 구현
-- productList 기반 DOM 동적 생성, UI/데이터 분리
-- select 입력 값 변경 시 최신·리뷰·인기순으로 배열 정렬 후 재렌더링
-- 체크박스 선택 값으로 color/device/event 조건 필터링 후 재렌더링
-- 작성 리뷰를 동적 추가, 최상단 삽입, 모달 닫기 및 입력 초기화, 개수 업데이트
-<br><br/>
+<br/><br/>
 
 ### 🔹 학습 포인트
 - 순수 CSS와 transition을 활용한 슬라이드 애니메이션 구현 경험
