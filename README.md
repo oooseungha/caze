@@ -13,49 +13,13 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
 <br/><br/>
 
 ### 🛠️ 코드 리뷰
-(1) ul > li 구조 기반으로 배너 슬라이드 구현
+## (1) ul > li 구조 기반으로 배너 슬라이드 구현
 - Swiper 등 외부 라이브러리 없이 순수 CSS와 transition을 활용해 슬라이드 애니메이션 처리
 - input[type="radio"]와 :checked 선택자를 이용해 버튼 클릭 시 슬라이드 위치 이동 제어
 - 각 슬라이드 별 left 값 변경으로 이동 효과 구현, transition: all 1s;로 부드러운 애니메이션 적용  
-
-``` javascript
-
-// html > index.html
-<section class="pro_best_sheet">
-  <ul>
-    <li class="pro_best_sheet_01">
-      <div class="pro_best best01">
-        <a href="./sub/detail/detail.html" class="best_img">
-          <img src="./image/best_pro_01.jpg" alt="베스트 제품 01">
-        </a>
-        <div class="pro_best_info">
-          <a href="./sub/detail/detail.html">
-            <p>소프트 러브 버니(범퍼) 아이폰케이스</p>
-          </a>
-          <a href="./sub/detail/detail.html">
-            <p>17,000</p>
-          </a>
-        </div>
-        <div class="best_num">
-          <span>1</span>
-        </div>
-      </div>
-    <!--pro_best_sheet_01 이하 내용 생략-->
-    </li>
-    <li class="pro_best_sheet_02">
-    <!--pro_best_sheet_02 생략-->
-    </li>
-    <li class="pro_best_sheet_03">
-    <!--pro_best_sheet_03 생략-->
-    </li>
-  </ul>
-</section><!--pro_best_sheet-->
-```
-
-```javascript
+```css
 
 // html > css > main.css
-/* ---- 제품 슬라이드 전체 컨테이너 ---- */
 .pro_best_sheet ul {
   width: 2685px;
   position: relative;
@@ -64,7 +28,6 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
   transition: all 1s;
 }
 
-/* 각 li 항목은 좌측으로 배치 */
 .pro_best_sheet ul li {
   float: left;
 }
@@ -77,9 +40,9 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
   display: flex;
 }
 
-/* ---- 라디오 버튼 활용 슬라이드 제어 ---- */
-#best_sheet_01, #best_sheet_02, #best_sheet_03 {display: none;}
-
+#best_sheet_01, #best_sheet_02, #best_sheet_03 {
+  display: none;
+}
 #best_sheet_01:checked~.pro_best_outer .pro_best_sheet ul {
   top: 0; left: 0;
 }
@@ -106,24 +69,87 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
 }
 ```
 
-(2) productList 데이터를 받아 HTML에 렌더링
-- 상품 데이터를 동적으로 HTML에 생성
-- DOM 구조와 UI 분리를 통한 유지보수 용이성  
+<details>
+  <summary>🔎 HTML 구조 자세히 보기</summary>
+
+  ```html
+  <section class="pro_best_sheet">
+    <ul>
+      <li class="pro_best_sheet_01">
+        <div class="pro_best best01">
+          <a href="./sub/detail/detail.html" class="best_img">
+            <img src="./image/best_pro_01.jpg" alt="베스트 제품 01">
+          </a>
+          <div class="pro_best_info">
+            <a href="./sub/detail/detail.html">
+              <p>소프트 러브 버니(범퍼) 아이폰케이스</p>
+            </a>
+            <a href="./sub/detail/detail.html">
+              <p>17,000</p>
+            </a>
+          </div>
+          <div class="best_num">
+            <span>1</span>
+          </div>
+        </div>
+        <!--pro_best_sheet_01 이하 내용 생략-->
+      </li>
+      <li class="pro_best_sheet_02">
+        <!--pro_best_sheet_02 생략-->
+      </li>
+      <li class="pro_best_sheet_03">
+        <!--pro_best_sheet_03 생략-->
+      </li>
+    </ul>
+  </section>
+```
+</details>
+
+<br>
+
+## (2) productList 배열 데이터를 기반으로 웹페이지에 상품 박스를 동적 생성 후 표시
+- for 루프를 사용해 배열 list의 각 상품(product) 처리
+- DOM 요소 생성 후 appendChild 활용해 DOM 구조 연결 후 최종 렌더링
 
 ```javascript
-// 기본값은 data.js에서 import한 productList
 function renderProductList(list = productList) {
   productWrap.innerHTML = '';
 
   for(let i=0; i<list.length; i++) {
     const product = list[i];
 
-    <summary>
-    // 상품 박스 생성
+    // DOM 요소 생성
+    const proBox = document.createElement('div');
+    proBox.setAttribute('class', 'product_box');
+    // 이하 하위 DOM 요소 생략
+
+    // DOM 구조 연결
+    proBox.appendChild(proImgBox);
+    proBox.appendChild(proInfo);
+    proBox.appendChild(proPriceBox);
+    // 이하 하위 DOM 구조 연결 생략
+  }
+};
+renderProductList();
+
+  
+```
+
+<details>
+  <summary>🔎 'DOM 요소 생성 및 구조 연결' 생략 없이 전체 보기</summary>
+  
+```javascript
+
+function renderProductList(list = productList) {
+  productWrap.innerHTML = '';
+
+  for(let i=0; i<list.length; i++) {
+    const product = list[i];
+
+    // DOM 요소 생성
     const proBox = document.createElement('div');
     proBox.setAttribute('class', 'product_box');
 
-    // 이미지 영역
     const proImgBox = document.createElement('div');
     proImgBox.setAttribute('class', 'product_img');
     const proImgA = document.createElement('a');
@@ -131,7 +157,6 @@ function renderProductList(list = productList) {
     const proImg = document.createElement('img');
     proImg.setAttribute('src', product.src);
 
-    // 정보 영역
     const proInfo = document.createElement('div');
     proInfo.setAttribute('class', 'product_info');
     const proNameBox = document.createElement('div');
@@ -141,7 +166,6 @@ function renderProductList(list = productList) {
     const proName = document.createElement('p');
     const proNameText = document.createTextNode(product.name);
 
-    // 버튼 영역 (장바구니, 하트)
     const proBtnBox = document.createElement('div');
     proBtnBox.setAttribute('class', 'product_btn');
     const proCart = document.createElement('div');
@@ -149,8 +173,6 @@ function renderProductList(list = productList) {
     const proHeart = document.createElement('div');
     proHeart.setAttribute('class', 'heart_img');
 
-
-    // 가격 영역
     const proPriceBox = document.createElement('div');
     proPriceBox.setAttribute('class', 'product_price');
     const proPriceA = document.createElement('a');
@@ -179,17 +201,20 @@ function renderProductList(list = productList) {
     proPriceA.appendChild(proPrice);
     proPrice.appendChild(proPriceText);
 
-    // 최종적으로 상품 박스를 productWrap에 추가
     productWrap.appendChild(proBox);
   }
 };
-</summary>
 renderProductList();
-```
 
-(3) select 요소 값 변경 시 정렬 기능 (sort)
-- listSort select 요소에서 값이 바뀌면 이벤트 리스너 실행
-- 선택된 기준에 따라 productList 배열을 정렬
+```
+</details>
+
+<br>
+
+## (3) 사용자가 정렬 select 옵션 변경 시 배열 선택 기준에 맞춰 정렬 후 렌더링 (sort)
+- document.querySelector('.list_sort') → 정렬 선택(select) 요소 호출
+- change 이벤트 활용하여 사용자가 옵션 바꿀 시 이벤트 등록
+- new Date 활용 날짜 기준 내림차순 정렬
 
 ```javascript
 const listSort = document.querySelector('.list_sort');
@@ -212,9 +237,13 @@ listSort.addEventListener('change', () => {
 });
 ```
 
-(4) 체크박스 필터링 기능 구현 (filter)
-- 체크된 옵션 값 추출 -> productList 필터링 -> 렌더링
-- 선택하지 않은 필터는 모든 항목 허용, 여러 필터 동시 적용 가능
+<br>
+
+## (4) 체크박스 값에 따라 제품 목록을 필터링 후 화면에 표시 (filter)
+- filterOptions(모든 체크박스)을 순회하며 change 이벤트 등록
+- 현재 체크된 옵션들을 배열로 추출하며 옵션 타입별로 분류(color, device, event)
+- filter 함수 활용하며 각 상품이 체크된 조건과 하나라도 일치하면 포함되도록 필터링 처리
+- console.log 활용하여 현재 선택된 필터 값 확인
 ```javascript
 
 filterOptions.forEach((filterOption) => {
@@ -250,15 +279,62 @@ filterOptions.forEach((filterOption) => {
     renderProductList(filteredProducts);
   });
 });
+```
+
+<br>
+
+## (5) 사용자가 작성한 리뷰 동적으로 HTML에 추가 기능 구현
+- 리뷰 텍스트, 별점 등 입력값 가져온 후 slice 활용해 별점 텍스트, 점수 문자열 생성
+- new Date 함수로 날짜 호출 후 YYYY.MM.DD 형식 변환
+- 리뷰 DOM 구조 생성 후 DOM 구조 연결 이후 UI 상태 초기화
+- 리뷰 업로드 시 리뷰 기존 텍스트에서 숫자 추출 후 +1 되도록 코딩 후 화면에 반영
+
+```javascript
+
+reviewUploadBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (reviewUploadBtn.disabled) return;
+
+  let reviewInnerText = reviewContext.value;
+  let reviewStarValue = reviewStarBox.value;
+  let reviewStarText = '★★★★★'.slice(0, reviewStarValue) + '☆☆☆☆☆'.slice(reviewStarValue); 
+  let reviewScoreText = `${reviewStarValue}.0`;
+  const reviewCount = document.querySelector('.review_count');
+
+  const today = new Date();
+  const reviewDateText = `${today.getFullYear()}.${(today.getMonth() + 1).toString().padStart(2, '0')}.${today.getDate().toString().padStart(2, '0')}.`;
+
+  const reviewOptionText = '선택 옵션: 아이폰14 Pro';
+
+  const reviewBox = document.createElement('div');
+  reviewBox.setAttribute('class', 'review_box');
+  // 이하 하위 DOM 요소 생략
+
+  reviewList.appendChild(reviewBox);
+  reviewBox.appendChild(reviewText);
+  reviewText.appendChild(reviewSubtext);
+  // 이하 하위 DOM 구조 연결 생략
+
+  reviewList.insertBefore(reviewBox, reviewList.children[0]);
+
+  reviewModalWrap.style.display = 'none';
+  reviewerNameInput.value = '';
+  reviewStarBox.value = 0;
+  reviewContext.value = '';
+
+  let countText = reviewCount.innerText;
+  let count = parseInt(countText[countText.length - 2]);
+
+  count++;
+  reviewCount.innerText = `(${count})`;
+});
 
 ```
 
-(5) 사용자가 작성한 리뷰 동적으로 HTML에 추가 기능 구현
-- 리뷰 입력값과 별점, 작성자, 옵션, 날짜 가져오기
-- 리뷰 리스트 최상단 삽입
-- 모달 닫기 및 입력값 초기화
-- 리뷰 업로드 시 리뷰 개수 업데이트
+<details>
+  <summary>🔎 'DOM 요소 생성 및 구조 연결' 생략 없이 전체 보기</summary>
 
+  
 ```javascript
 
 reviewUploadBtn.addEventListener('click', (e) => {
@@ -350,6 +426,8 @@ reviewUploadBtn.addEventListener('click', (e) => {
 });
 
 ```
+</details>
+
 <br/>
 
 ### 🔍 코드 리뷰 요약
