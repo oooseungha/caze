@@ -14,6 +14,7 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
 
 ### 🛠️ 코드 리뷰
 ## (1) ul > li 구조 기반으로 배너 슬라이드 구현
+![Image](https://github.com/user-attachments/assets/cf104037-c9db-49ef-9eec-e5d0c3117f7c)
 - Swiper 등 외부 라이브러리 없이 순수 CSS와 transition을 활용해 슬라이드 애니메이션 처리
 - input[type="radio"]와 :checked 선택자를 이용해 버튼 클릭 시 슬라이드 위치 이동 제어
 - 각 슬라이드 별 left 값 변경으로 이동 효과 구현, transition: all 1s;로 부드러운 애니메이션 적용  
@@ -108,6 +109,8 @@ HTML, CSS, JavaScript, jQuery 기반의 자사 쇼핑몰 웹사이트 구현
 <br>
 
 ## (2) productList 배열 데이터를 기반으로 웹페이지에 상품 박스를 동적 생성 후 표시
+<img width="927" height="633" alt="Image" src="https://github.com/user-attachments/assets/6cfcd4d7-52f7-4bbc-a18f-95ee265f89c5" />
+
 - for 루프를 사용해 배열 list의 각 상품(product) 처리
 - DOM 요소 생성 후 appendChild 활용해 DOM 구조 연결 후 최종 렌더링
 
@@ -132,7 +135,6 @@ function renderProductList(list = productList) {
 };
 renderProductList();
 
-  
 ```
 
 <details>
@@ -212,6 +214,8 @@ renderProductList();
 <br>
 
 ## (3) 사용자가 정렬 select 옵션 변경 시 배열 선택 기준에 맞춰 정렬 후 렌더링 (sort)
+<img width="914" height="639" alt="Image" src="https://github.com/user-attachments/assets/48226c41-86af-4f3e-bc92-9ca3a094ff06" />
+
 - document.querySelector('.list_sort') → 정렬 선택(select) 요소 호출
 - change 이벤트 활용하여 사용자가 옵션 바꿀 시 이벤트 등록
 - new Date 활용 날짜 기준 내림차순 정렬
@@ -240,6 +244,8 @@ listSort.addEventListener('change', () => {
 <br>
 
 ## (4) 체크박스 값에 따라 제품 목록을 필터링 후 화면에 표시 (filter)
+![Image](https://github.com/user-attachments/assets/50eeb3dd-5a62-4502-8a5b-8d7edf1f4323)
+
 - filterOptions(모든 체크박스)을 순회하며 change 이벤트 등록
 - 현재 체크된 옵션들을 배열로 추출하며 옵션 타입별로 분류(color, device, event)
 - filter 함수 활용하며 각 상품이 체크된 조건과 하나라도 일치하면 포함되도록 필터링 처리
@@ -284,6 +290,7 @@ filterOptions.forEach((filterOption) => {
 <br>
 
 ## (5) 사용자가 작성한 리뷰 동적으로 HTML에 추가 기능 구현
+![Image](https://github.com/user-attachments/assets/f8693cd8-3294-4f8b-ad33-0638c0aa7e4a)
 - 리뷰 텍스트, 별점 등 입력값 가져온 후 slice 활용해 별점 텍스트, 점수 문자열 생성
 - new Date 함수로 날짜 호출 후 YYYY.MM.DD 형식 변환
 - 리뷰 DOM 구조 생성 후 DOM 구조 연결 이후 UI 상태 초기화
